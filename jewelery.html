@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>jewelery</title>
+</head>
+<body>
+<!-- Start NavBar  -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
+       
+  <div class="container-fluid">
+    <h2 class="navbar-brand ms-5 fw-bolder mb-0 fs-2 fonts">HFA</h2>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="favourite.html">Favourits</a>
+        </li>
+        <li class="nav-item dropdown" >
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+          </a>
+          <ul class="dropdown-menu" id="dropdown">
+            <li><a class="dropdown-item" href=""></a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active position-relative" href="Cart.html"><i class="fas fa-shopping-cart fs-4"></i>
+          <div class="CircleCart position-absolute"></div></a>
+        </li>
+        
+      </ul>
+    </div>
+    <div class="collapse navbar-collapse widthh justify-content-end" id="navbarNav">
+      
+      <ul class="navbar-nav  mb-lg-0" id="SignUpNone">
+        <li class="nav-item">
+          <a class="nav-link active text-dark" aria-current="page" href="login.html">log Out <i class="fa-solid fa-right-from-bracket"></i></a>
+        </li>  
+      </ul>
+     
+    </div>
+    
+  </div>
+</nav>
+<!-- End NavBar  -->
+
+
+<!-- Start Product  -->
+
+<section class="mt-5">
+    <div class="container">
+        <h2 class="text-center mt-3 mb-3">Jewelery Product</h2>
+        <div class="row g-4 mb-4 mt-5 product">
+            <div class="col-md-6 col-sm-12 col-lg-3 col-xl-3">
+                <div class="product p-2">
+                     <div class="cursor-pointer hover-table">
+                        <img src="" class="w-100" height="250">
+                        <div class="d-flex justify-content-between">
+                        <h3 class="h6 cat-col">  </h3>
+                        <i class="fa-regular fa-heart  text-danger fs-3 heart"></i>
+                        </div>
+                        
+                        <div class="d-flex justify-content-between">
+                            <p>  <span>EGP</span></p>
+                            <div>
+                                 <i class="fas fa-star  text-warning"></i>
+                                  <span class="text-muted"></span>
+                                 </div>
+                        </div>
+                    </div>
+                    <a herf=""><button class="btn-main w-100">Add Product</button></a>
+                </div>
+            </div>
+        </div>
+
+      
+    </div>
+    
+</section>
+
+<!-- End Product  -->
+
+
+
+
+    <!-- Start Footer section  -->
+<footer class="mt-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mt-5 mb-3">
+                <h1 class="fonts">HFA</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt cilisis.</p>
+                <img src="./images/payment-1.png">
+                <img src="./images/payment-2.png">
+                <img src="./images/payment-3.png">
+                <img src="./images/payment-4.png">
+            </div>
+            <div class="col-md-3 mt-5 mb-3">
+                <h4>QUICK LINKS</h4>
+                <p><a href="" class="text-decoration-none text-dark">About</a></p>
+                <p><a href="" class="text-decoration-none text-dark">Blogs</a></p>
+                <p><a href="" class="text-decoration-none text-dark">Contact</a></p>
+                <p><a href="" class="text-decoration-none text-dark">FAQ</a></p>
+            </div>
+            <div class="col-md-3 mt-5 mb-3">
+                <h4>ACCOUNT</h4>
+                <p><a href="" class="text-decoration-none text-dark">My Account</a></p>
+                <p><a href="" class="text-decoration-none text-dark">Orders Tracking</a></p>
+                <p><a href="" class="text-decoration-none text-dark">Checkout</a></p>
+                <p><a href="" class="text-decoration-none text-dark">Wishlist</a></p>
+            </div>
+            <div class="col-md-3 mb-3 mt-5">
+                <h4 class="text-dark mb-4">Newsletter</h4>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control border-3 py-4" placeholder="Your Name" required="required">
+                    </div>
+                    <div class="form-group mt-3">
+                        <input type="email" class="form-control border-3 py-4" placeholder="Your Email" required="required">
+                    </div>
+                    <div>
+                        <button class="btn-main border-0 py-3 mt-3" type="submit">Subscribe Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<hr>
+
+<h5 class="text-center mb-3 fonts">©HFA All Rights Reserved 2024</h5>
+</footer>
+<!-- End Footer section  -->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jewelery.js"></script>
+</body>
+</html>

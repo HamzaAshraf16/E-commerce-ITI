@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="bg-light shadow py-3 align-items-center text-dark">
+    
+    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+      <p class="h1 w-25 me-auto mb-0 ms-5"><a href="./index.html" class="text-decoration-none text-dark">HFM</a></p>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-CRUDProduct-tab" data-bs-toggle="pill" data-bs-target="#pills-CRUDProduct" type="button" role="tab" aria-controls="pills-CRUD Product" aria-selected="true">CRUD Product</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-Allorders-tab" data-bs-toggle="pill" data-bs-target="#pills-Allorders" type="button" role="tab" aria-controls="pills-Allorders" aria-selected="false">All orders</button>
+      </li>
+      
+      <li class="nav-item me-5 text-main">
+               <button class="btn"><a href="./UserAdmin.html" class="text-decoration-none">Log out </a><span> <i class="fa-solid fa-right-from-bracket"></i></span></button>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active mx-auto " id="pills-CRUDProduct" role="tabpanel" aria-labelledby="pills-CRUDProduct-tab" tabindex="0">
+      <div class="contanier mt-5">
+        <div class="w-75 mx-auto rounded p-3">
+            <h2 class="text-center">Product Management System</h2>
+            <div>
+            <div class="form-group mb-3">
+                <label for="productName">Product Name:-</label>
+                <input  type="text" class="form-control" id="productName" required oninput="productNameValidation()">
+            </div>
+            <div class="alert alert-danger d-none" id="error">Product Name Error</div>
+            <div class="form-group mb-3">
+                <label for="productPrice">Product Price:-</label>
+                <input type="number" class="form-control" id="productPrice" required>
+            </div>
+            <div class="form-group mb-3">
+              <label for="productStock">Product Stock Quantity:-</label>
+              <input type="number" class="form-control" id="productStock" required>
+          </div>
+            <div class="form-group mb-3">
+              <label  for="inputGroupSelect01">Protuct Category:-</label>
+              <select class="form-control" id="productCategory" required>
+                <option selected>Choose...</option>
+                <option>electronics</option>
+                <option>jewelery</option>
+                <option>men's clothing</option>
+                <option >women's clothing</option>
+              </select>
+            </div>
+            
+            <div class="form-group mb-3">
+                <label for="productDescription">Product Description:-</label>
+                <textarea class="form-control" id="productDescription" rows="3" cols="30" minlength ="50" required></textarea>
+            </div>
+            <div class="form-group mb-3">
+              <label for="image">Product image:-</label>
+              <input class="form-control" id="image" type="file" accept="image/*" required>
+            </div>
+            <button class="btn btn-primary w-100" onclick="addProduct()" id="mybtn">Add Product</button>
+            
+        </div>
+
+        <table class="w-75 mx-auto table  bg-light mt-4">
+          <thead>
+              <th>Id</th>
+              <th>ProductName</th>
+              <th>ProductPrice</th>
+              <th>ProductCategory</th>
+              <th>productStock</th>
+              <th>ImageName</th>
+              <th>Update</th>
+              <th>Delete</th>
+          </thead>
+          <tbody id="mybody">
+              
+          </tbody>
+      </table>
+    </div>
+      </div>
+    </div>
+   
+    <div class="tab-pane fade" id="pills-Allorders" role="tabpanel" aria-labelledby="pills-Allorders-tab" tabindex="0">
+      <section class=" bg-light mx-auto rounded-3 my-2 p-3 w-75 buy">
+
+        <h1 class="text-center text-color">All Order</h1>
+      <div class="container orders">
+        <div class="row border-bottom py-2 mt-3">
+          <div class="col-md-2">
+      
+         <img src="./images/product/" class="w-100" />
+      
+         </div>
+         <div class="col-md-10 d-flex justify-content-between align-items-center">
+      
+         <div>
+             <h3 class="h3 mb-2 text-color"></h3>
+             <h4 class="text-main mb-2 mt-2"></h4>
+               
+      
+         </div>
+      
+       
+      
+      </div>
+      </div>
+      
+      
+      
+      
+      
+          
+      </div>
+        
+      <div class="mt-3 d-flex justify-content-center">
+        <div id="root"></div>
+        <div id="paypal-button-container"></div>
+        <p id="result-message"></p>
+      </div>
+      
+      
+         
+      
+      </section>
+
+    </div>
+    
+  </div>
+  
+  
+      <script src="./js/bootstrap.bundle.min.js"></script>
+      
+      <script src="./js/admin.js"></script>
+</body>
+</html>
+

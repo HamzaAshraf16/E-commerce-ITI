@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/styleLogin.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/all.css">
+<title>login</title>
+</head>
+<body>
+ <div class="AdminItem">
+    <a href="UserAdmin.html"><i class="fas fa-user AdminLogo"></i></a>
+    <span>UserAdmin</span>   
+ </div>
+
+<div class="container my-5  w-25 py-4  bgColor">
+<img src="images/user.jpg" alt="" class="w-25 rounded-circle d-block m-auto">
+<h3 class="text-center">login</h3>
+<form>
+<div class="mb-3">
+<label for="" class="form-label">User Name:</label>
+<input type="text" class="form-control w-100 " id="userName" placeholder="please Enter your name">
+<span class=""></span>
+</div>
+<div class="mb-3">
+<label for="" class="form-label text-center">Password:</label>
+<input type="password" class="form-control w-100" id="password" placeholder="please Enter your Password">
+<input type="checkbox" onclick="ShowPasswordValue()" style="cursor: pointer;">
+<span class="text-muted ">Show Password</span> 
+</div>
+<div class="mb-3">
+<button class="btn btn-primary w-100 py-2 mt-2" id="loginBtn">login</button>
+</div>
+<div class="mb-3">
+<span>Not hava account?</span><a href="register.html">Register</a>
+</div>
+<span id="ShowErrorLogin"></span>
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+<script src="js/login.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

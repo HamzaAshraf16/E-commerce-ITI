@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/styleLogin.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>Register</title>
+</head>
+<body>
+<div class="container my-4 w-25 py-4 bgColor ">
+<img src="images/user.jpg" alt="" class="w-25 rounded-circle d-block m-auto">
+<h3 class="text-center">Register</h3>
+<form>
+<div class="mb-1">
+<label for="userName" class="form-label">User Name:</label>
+<input type="text" class="form-control w-100" id="userName" placeholder="please Enter your name" onkeyup="validName()" required>
+<span id="ShowErrorName"></span>
+</div>
+<div class="mb-1">
+<label for="email" class="form-label">Email address or phone number:</label>
+<input type="email" class="form-control w-100" id="email" placeholder="please Enter your Email" onkeyup="validEmail()" required>
+<span id="ShowErrorEmail"></span>
+</div>
+<div class="mb-1">
+<label for="password" class="form-label text-center">Password:</label>
+<input type="password" class="form-control w-100" id="password" placeholder="please Enter your Password" required>
+<input type="checkbox" onclick="ShowPasswordValue()" style="cursor: pointer;">
+<span class="text-muted ">Show Password</span> 
+</div>
+<div class="mb-1">
+<label for="ConfirmPassword" class="form-label text-center">Confirm Password:</label>
+<input type="password" class="form-control w-100" id="ConfirmPassword" placeholder="please Confirm your Password" onkeyup="validPssword()" required>
+<span id="ShowErrorPassword"></span>
+</div>
+<div class="mb-1">
+<button type="submit" class="btn btn-primary w-100 py-2 mt-2" id="btnRegister">Register</button>
+</div>
+<div class="mb-1">
+<span>hava account?</span><a href="login.html">login</a>
+</div>
+<span id="ShowErrorFillData" class="d-none bg-danger p-1 rounded-1 text-center"></span>
+</form>
+
+</div>
+
+
+
+
+
+
+
+<Script src="js/register.js"></Script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

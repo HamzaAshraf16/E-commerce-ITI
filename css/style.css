@@ -1,0 +1,197 @@
+:root{
+    --main-color: #ca1515;
+}
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+.image{
+    position: relative;
+    
+    
+}
+.contant{
+    position: absolute;
+    top:20%;
+  }
+.contant p{
+    max-width: 420px;
+    margin-left: 10px;
+    text-align: center;
+}
+.contant-men{
+ position: absolute;
+ top:30%;
+ margin-left: 10px;
+}
+.contant-men2{
+position: absolute;
+ top:45%;
+ margin-left: 10px;
+}
+.contant-kids{
+ position: absolute;
+ top:15%;
+ margin-left: 10px;
+}
+
+.btn-main {
+    background-color: var(--main-color);
+    padding: 7px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    
+  }
+  .text-color{
+    color: var(--main-color);
+  }
+  .heart{
+    display: none;
+    cursor: pointer;
+  }
+  .hover-table:hover .heart{
+display: block;
+  }
+  .remove{
+    display: none;
+    cursor: pointer;
+  }
+  .hover-table:hover .remove{
+    display: block;
+    
+      }
+.ZoomPhoto{
+  background-color: rgba(0,0,0,.1);
+  
+}
+.ZoomPhoto img{
+  transition: .3s;
+}
+.ZoomPhoto img:hover{
+  padding: 30px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* text of images */
+  .TextOfImage{
+    top: 40%;
+    padding:20px;
+  }
+  .TextOfImage h2{
+    font-size:30px
+  }
+  .TextOfImage p{
+    width:40%
+  }
+  .TextOfImage2{
+    top: 30%;
+    padding: 10px;
+  }
+  .TextOfImage2 h2{
+    font-size: 20px;
+  }
+  .TextOfImage3{
+    top: 5%;
+    padding: 20px 30px;
+  }
+  .TextOfImage3 h2{
+    font-size: 25px;
+  }
+  /* /////////////////////////////////// */
+
+
+  .CircleCart{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ca1515;
+    top: 0;
+    right: -5px;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    display: none;
+  }
+ 
+
+
+/**  CRUD*/
+  
+.nav-link{
+  color: #3D5161;
+
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background-color:var(--main-color) ;
+}
+
+/** Cart*/
+.line{
+  max-width: 600px;
+}
+.line2{
+  max-width: 800px;
+}
+.icon{
+  font-size: 100px;
+}
+
+
+/*! Spinner*/
+.fonts{
+  font-family: "Playwrite PL", cursive;
+
+}
+.font-cat{
+  font-family: "Playwrite AU VIC", cursive;
+}
+
+
+
+
+/*& Feedback*/
+.feedback{
+  width:70%;
+  margin: auto;
+}
+.name{
+   font-weight: 600;
+   font-size: 14px;
+}
+.card{
+   width:380px;
+   padding: 20px;
+   border-radius: 10px;
+   margin: 15px;
+   background-color: white;
+   height: 150px;
+   box-shadow: 2px 7px 20px -5px rgba(0,0,0,0.57);
+   -webkit-box-shadow: 2px 7px 20px -5px rgba(0,0,0,0.57);
+   -moz-box-shadow: 2px 7px 20px -5px rgba(0,0,0,0.57);
+}
+.customer-profile{
+   width:50px;
+   height: 50px;
+   margin-right: 10px;
+}
+.customer-feedback-header{
+   display:flex;
+   align-items: center;
+   margin-bottom: 20px;
+}
+.customer-profile img{
+   width:100% !important;
+   height: 100% !important;
+   object-fit: cover;
+   border-radius: 50%;
+}
+

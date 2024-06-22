@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://www.paypal.com/sdk/js?client-id=AS4625JSILi4apEQ2wnK_TZmXQztc6h0Tti-xROwsQGjT3xivVBqPtsvJBwmEqHIKQrfWSlHOoIr2bqS"></script>
+ 
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Cart</title>
+</head>
+<body>
+    <!-- Start NavBar  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
+       
+      <div class="container-fluid">
+        <h2 class="navbar-brand ms-5 fw-bolder mb-0 fs-2">HFA</h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="favourite.html">Favourits</a>
+            </li>
+            <li class="nav-item dropdown" >
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+              </a>
+              <ul class="dropdown-menu" id="dropdown">
+                <li><a class="dropdown-item" href=""></a></li>
+                
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active position-relative" href="Cart.html"><i class="fas fa-shopping-cart fs-4"></i>
+              <div class="CircleCart position-absolute"></div></a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse widthh justify-content-end" id="navbarNav">
+          
+          <ul class="navbar-nav  mb-lg-0" id="SignUpNone">
+            <li class="nav-item">
+              <a class="nav-link active text-dark" aria-current="page" href="login.html">log Out <i class="fa-solid fa-right-from-bracket"></i></a>
+            </li>  
+          </ul>
+         
+        </div>
+        
+      </div>
+    </nav>
+<!-- End NavBar  -->
+
+
+<!-- sections -->
+<!--
+<section class="mt-5">
+  <div class="container">
+      <h2 class="text-center mt-3 mb-3">Cart</h2>
+      <div class="row g-4 mb-4 mt-5 cart">
+         <div class="col-md-12 border">
+          <div class="py-3 d-flex align-items-center">
+            <img src="./images/product/elec1.jpg" width="150" height="150">
+            <div>
+              <h3 class="h4 ms-3 line text-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, veniam.</h3>
+              <h3 class="h6 ms-3 line2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non omnis possimus, quam voluptates perspiciatis, a numquam nostrum eveniet fuga odio quia, officiis maxime reprehenderit rem cumque vero? Dolor est quasi porro aspernatur, provident sed maiores suscipit eos accusamus eaque, velit ad. Hic mollitia voluptatibus laboriosam magni ipsam autem vitae ex maxime, repudiandae voluptates doloribus incidunt molestias, amet nesciunt ratione pariatur magnam deserunt voluptatem perferendis dignissimos? Labore facere fugiat velit tenetur nemo veritatis aperiam. Repellendus provident pariatur labore doloribus voluptatum, non molestiae, deserunt nostrum libero, reprehenderit ex optio nisi sunt nesciunt. A hic dolorum alias. Aspernatur praesentium eos suscipit. Excepturi, recusandae.</h3>
+            </div>
+            <div>
+              
+            </div>
+          </div>
+          <div>
+            <button class="btn btn-danger mb-3">Delete Element</button>
+          </div>
+         </div>
+          
+      </div>
+
+    
+  </div>
+  
+</section>-->
+<section class=" bg-light mx-auto rounded-3 my-2 p-3 w-75 buy">
+
+  <h1 class="text-center text-color">Shop Cart</h1>
+<div class="container cart">
+  <div class="row border-bottom py-2 mt-3">
+    <div class="col-md-2">
+
+
+   </div>
+   <div class="col-md-10 d-flex justify-content-between align-items-center">
+
+   <div>
+       <h3 class="h3 mb-2 text-color"></h3>
+       <h4 class="text-main mb-2 mt-2"></h4>
+         
+
+   </div>
+
+ 
+
+</div>
+</div>  
+</div>
+
+<h2 class="mt-2 text-uppercase" id="price"></h2>
+  
+<div class="mt-3 d-flex justify-content-center">
+  <div id="root"></div>
+  <div id="paypal-button-container"></div>
+  <p id="result-message"></p>
+</div>
+
+
+   
+
+</section>
+<!-- end of section -->
+
+<section class="bg-light mx-auto rounded-3 my-2 p3 w-75 pending d-none">
+<div class="container d-flex justify-content-center align-items-center flex-column pt-5 pb-5">
+  <div>
+    <i class="fa-regular fa-clock text-color icon pt-5"></i>
+  </div>
+  <div>
+    <h1 class="pt-5">Pending Order Until HFA team Accepted or Rejected</h1>
+  </div>
+</div>
+
+</section>
+
+<!-- footer -->
+<footer class="mt-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mt-5 mb-3">
+                <h1>HFA</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt cilisis.</p>
+                <img src="./images/payment-1.png">
+                <img src="./images/payment-2.png">
+                <img src="./images/payment-3.png">
+                <img src="./images/payment-4.png">
+            </div>
+            <div class="col-md-3 mt-5 mb-3">
+                <h4>QUICK LINKS</h4>
+                <p><a href="" class="text-decoration-none text-dark">About</a></p>
+                <p><a href="" class="text-decoration-none text-dark">Blogs</a></p>
+                <p><a href="" class="text-decoration-none text-dark">Contact</a></p>
+                <p><a href="" class="text-decoration-none text-dark">FAQ</a></p>
+            </div>
+            <div class="col-md-3 mt-5 mb-3">
+                <h4>ACCOUNT</h4>
+                <p><a href="" class="text-decoration-none text-dark">My Account</a></p>
+                <p><a href="" class="text-decoration-none text-dark">Orders Tracking</a></p>
+                <p><a href="" class="text-decoration-none text-dark">Checkout</a></p>
+                <p><a href="" class="text-decoration-none text-dark">Wishlist</a></p>
+            </div>
+            <div class="col-md-3 mb-3 mt-5">
+                <h4 class="text-dark mb-4">Newsletter</h4>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control border-3 py-4" placeholder="Your Name" required="required">
+                    </div>
+                    <div class="form-group mt-3">
+                        <input type="email" class="form-control border-3 py-4" placeholder="Your Email" required="required">
+                    </div>
+                    <div>
+                        <button class="btn-main border-0 py-3 mt-3" type="submit">Subscribe Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<hr>
+
+<h5 class="text-center mb-3">©HFA All Rights Reserved 2024</h5>
+</footer>
+<!-- End Footer section  -->
+
+  
+
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/cart.js"></script>
+</body>
+</html>
